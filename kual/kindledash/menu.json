@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "name": "Kindle Dashboard",
+      "priority": 0,
+      "items": [
+        { "name": "Open dashboard (stay awake)", "priority": 1, "action": "bin/start.sh" },
+        { "name": "Let Kindle sleep again", "priority": 2, "action": "bin/stop.sh" }
+      ]
+    }
+  ]
+}

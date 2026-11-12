@@ -259,7 +259,7 @@ body { font-family: "Inter", "Helvetica Neue", Arial, sans-serif; color: #000; -
       if (shown >= 8) { h += '<div class="small muted" style="padding-top:6px">+ ' + (items.length - i) + ' more, tap to see</div>'; break; }
       h += '<div class="row" style="padding:9px 0 9px">' + schedLine(items[i]) + '</div>'; shown++;
     }
-    $("sched").innerHTML = h || '<div class="muted" style="font-size:28px">Nothing scheduled today</div>';
+    $("sched").innerHTML = h || '<div class="muted" style="font-size:28px">' + esc(data.schedule_note || "Nothing scheduled today") + '</div>';
     $("schedR").innerHTML = (n ? n + " classes  " : "") + "›";
   }
 
